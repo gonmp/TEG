@@ -1,10 +1,13 @@
 package teg;
 
+import java.awt.Graphics;
+
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 import teg.Tablero.seccionDeTurno;
 
-public class Tablero extends JFrame {
+public class Tablero extends JPanel {
 	
 	protected int numeroDePaises;
 	protected Pais paises[] = new Pais[6];
@@ -14,13 +17,8 @@ public class Tablero extends JFrame {
 	
 	public static seccionDeTurno seccion;
 	
-	public Tablero(){
-		
-		setBounds(250, 70, 800, 600);
-		setVisible(true);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setTitle("T.E.G");
-		
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
 	}
 
 	public static void main(String[] args) {

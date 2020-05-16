@@ -1,10 +1,15 @@
 package teg;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Jugador {
 	
 	protected int numeroDeJugador;
 	protected String nombre;
 	protected int numeroDePaises;
+	
+	protected List<Integer> paises = new ArrayList<>();
 	
 	public Jugador(int numeroDeJugador, String nombre){
 		
@@ -36,6 +41,14 @@ public class Jugador {
 
 	public void setNumeroDePaises(int numeroDePaises) {
 		this.numeroDePaises = numeroDePaises;
+	}
+	
+	public void agregarPais(int numeroPais) {
+		paises.add(numeroPais);
+	}
+	
+	public int cantidadDePaises() {
+		return paises.size();
 	}
 
 }

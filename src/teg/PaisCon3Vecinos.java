@@ -8,14 +8,20 @@ import javax.swing.JLabel;
 
 public class PaisCon3Vecinos extends Pais{
 	
+	public PaisCon3Vecinos(int numeroDePais, String nombre, int x, int y, int hitx, int hity, int hitw, int hith,
+			int ficX, int ficY) {
+		super(numeroDePais, nombre, x, y, hitx, hity, hitw, hith, ficX, ficY);
+		// TODO Auto-generated constructor stub
+	}
+
 	private Pais vecino1;
 	private Pais vecino2;
 	private Pais vecino3;
 	private Pais paisesVecinos[];
 
-	public PaisCon3Vecinos(String nombre, int numeroDePais, int fichas, Jugador propietario, JLabel etiquetaDelPais) {
+	/*public PaisCon3Vecinos(String nombre, int numeroDePais, int fichas, Jugador propietario, JLabel etiquetaDelPais) {
 		
-		super(nombre, numeroDePais, fichas, propietario, etiquetaDelPais);
+		super(nombre, numeroDePais, fichas, propietario);
 		
 		paisesVecinos = new Pais[3];
 		
@@ -23,7 +29,7 @@ public class PaisCon3Vecinos extends Pais{
 		
 		this.etiquetaDelPais.addMouseListener(paisAAtacar);
 		
-	}
+	}*/
 	
 	public void setVecinos(Pais vecino1, Pais vecino2, Pais vecino3) {
 		
@@ -45,7 +51,7 @@ public class PaisCon3Vecinos extends Pais{
 				
 				for(int i = 0; i < paisesVecinos.length; i++) {
 					
-					paisesVecinos[i].getEtiquetaDelPais().setText("Pais Seleccionado");
+					//paisesVecinos[i].getEtiquetaDelPais().setText("Pais Seleccionado");
 					
 				}
 				

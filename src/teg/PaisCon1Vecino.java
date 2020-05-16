@@ -12,17 +12,23 @@ import teg.Tablero.seccionDeTurno;
 
 public class PaisCon1Vecino extends Pais{
 	
+	public PaisCon1Vecino(int numeroDePais, String nombre, int x, int y, int hitx, int hity, int hitw, int hith,
+			int ficX, int ficY) {
+		super(numeroDePais, nombre, x, y, hitx, hity, hitw, hith, ficX, ficY);
+		// TODO Auto-generated constructor stub
+	}
+
 	Pais vecino;
 
-	public PaisCon1Vecino(String nombre, int numeroDePais, int fichas, Jugador propietario, JLabel etiquetaDelPais) {
+	/*public PaisCon1Vecino(String nombre, int numeroDePais, int fichas, Jugador propietario, JLabel etiquetaDelPais) {
 		
-		super(nombre, numeroDePais, fichas, propietario, etiquetaDelPais);
+		//super(nombre, numeroDePais, fichas, propietario);
 		
 		SeleccionPaisParaAtacar paisAAtacar = new SeleccionPaisParaAtacar();
 		
 		this.etiquetaDelPais.addMouseListener(paisAAtacar);
 		
-	}
+	}*/
 	
 	public void setVecino(Pais vecino) {
 		
